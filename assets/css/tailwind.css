@@ -1,0 +1,239 @@
+/**
+ * This injects Tailwind's base styles, which is a combination of
+ * Normalize.css and some additional base styles.
+ *
+ * You can see the styles here:
+ * https://github.com/tailwindcss/tailwindcss/blob/master/css/preflight.css
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/preflight";
+ */
+@tailwind preflight;
+
+/**
+ * This injects any component classes registered by plugins.
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/components";
+ */
+@tailwind components;
+
+/**
+ * Here you would add any of your custom component classes; stuff that you'd
+ * want loaded *before* the utilities so that the utilities could still
+ * override them.
+ *
+ * Example:
+ *
+ * .btn { ... }
+ * .form-input { ... }
+ *
+ * Or if using a preprocessor or `postcss-import`:
+ *
+ * @import "components/buttons";
+ * @import "components/forms";
+ */
+
+/**
+ * This injects all of Tailwind's utility classes, generated based on your
+ * config file.
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/utilities";
+ */
+@tailwind utilities;
+
+/**
+ * Here you would add any custom utilities you need that don't come out of the
+ * box with Tailwind.
+ *
+ * Example :
+ *
+ * .bg-pattern-graph-paper { ... }
+ * .skew-45 { ... }
+ *
+ * Or if using a preprocessor or `postcss-import`:
+ *
+ * @import "utilities/background-patterns";
+ * @import "utilities/skew-transforms";
+ */
+
+body {
+  line-height: 1.44;
+  transition: all ease 250ms;
+}
+
+h1 {
+  font-size: 3rem;
+  line-height: 1.11;
+}
+
+h2 {
+  line-height: 1.33;
+}
+
+a {
+  transition: all ease 250ms;
+}
+
+@screen md {
+  .container {
+    /* padding-left: 5.5rem; */
+  }
+}
+
+@screen md {
+  h1 {
+    font-size: 5.35vw;
+  }
+
+  h2 {
+    font-size: 3vw;
+  }
+
+  h3 {
+    font-size: 1.95vw;
+  }
+
+  p, a.btn {
+    font-size: 1.95vw;
+  }
+}
+
+@screen lg {
+  p, a.btn {
+    font-size: 1.6vw;
+  }
+}
+
+.color-mode-orange {
+  @apply bg-orange;
+  @apply text-black;
+}
+
+.color-mode-orange a {
+  @apply text-black;
+}
+
+.color-mode-light {
+  @apply bg-white;
+  @apply text-red;
+}
+
+.color-mode-light a {
+  @apply text-red;
+}
+
+.color-mode-dark {
+  @apply bg-black;
+  @apply text-yellow;
+}
+
+.color-mode-dark a {
+  @apply text-yellow;
+}
+
+.color-mode-red {
+  @apply bg-red;
+  @apply text-navy;
+}
+
+.color-mode-red a {
+  @apply text-navy;
+}
+
+.color-mode-navy {
+  @apply bg-navy;
+  @apply text-green;
+}
+
+.color-mode-navy a {
+  @apply text-green;
+}
+
+.color-mode-green {
+  @apply bg-green;
+  @apply text-navy;
+}
+
+.color-mode-green a {
+  @apply text-navy;
+}
+
+.color-mode-orange .toggle-dark-mode,
+.color-mode-orange .btn {
+  @apply border-black;
+  
+  @apply text-black;
+}
+
+.color-mode-red .toggle-dark-mode,
+.color-mode-red .btn {
+  @apply border-navy;
+  /* @apply bg-red; */
+  @apply text-navy;
+}
+
+.color-mode-orange .toggle-dark-mode,
+.color-mode-orange .btn {
+  @apply border-black;
+  /* @apply bg-orange; */
+  @apply text-black;
+}
+
+.color-mode-dark .toggle-dark-mode,
+.color-mode-dark .btn {
+  @apply border-yellow;
+  /* @apply bg-black; */
+  @apply text-yellow;
+}
+
+.color-mode-green .toggle-dark-mode,
+.color-mode-green .btn {
+  @apply border-navy;
+  /* @apply bg-green; */
+  @apply text-navy;
+}
+
+.color-mode-light .toggle-dark-mode,
+.color-mode-light .btn {
+  @apply border-red;
+  /* @apply bg-white; */
+  @apply text-red;
+}
+
+.color-mode-navy .toggle-dark-mode,
+.color-mode-navy .btn {
+  @apply border-green;
+  /* @apply bg-navy; */
+  @apply text-green;
+}
+
+.toggle-dark-mode:hover {
+  transform: scale(1.2);
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 1s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+.menu {
+  @apply mt-8;
+  @apply z-10;
+}
+
+@screen md {
+  .menu {
+    @apply mt-0;
+    @apply fixed;
+    top: 8.5rem;
+    left: -1.25em;
+    transform: rotate(90deg)
+  }
+}
