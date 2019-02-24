@@ -1,7 +1,6 @@
 <template>
   <div class="inner-app font-serif min-h-screen">
     <div class="circle" ref="circle">
-      <svg class="w-6" viewBox="0 0 32 32" aria-hidden="true"><path fill="currentColor" d="M7.004 23.087l7.08-7.081-7.07-7.071L8.929 7.02l7.067 7.069L23.084 7l1.912 1.913-7.089 7.093 7.075 7.077-1.912 1.913-7.074-7.073L8.917 25z"/></svg>
     </div>
     
     <button class="border-2 border-dashed rounded rounded-full flex justify-center items-center h-12 w-12 fixed pin-b pin-r m-4 toggle-dark-mode font-mono transition" @click="$store.commit('ui/TOGGLE_COLOR_MODE')" @mouseenter="tweenHover" @mouseleave="tweenReset">
@@ -57,7 +56,7 @@ export default {
       TweenLite.to(document.getElementsByClassName('circle'), 0.2, {
         css: {
           left: e.clientX,
-          top: e.clientY,
+          top: e.clientY
         }
       });
     })
@@ -68,10 +67,11 @@ export default {
         css: {
           left: e.clientX,
           top: e.clientY,
-          scale: 30,
-          rotation: -45,
-          margin: '50px 0 0 50px',
-          opacity: 0.15,
+          scale: 1,
+          boxShadow: '0 0 0 250px rgba(0,0,0, 0.05), 0 0 0 100px rgba(0,0,0, 0.05)',
+          width: '5px',
+          height: '5px',
+          // autoAlpha:0.3
         }
       });
     },
@@ -80,10 +80,11 @@ export default {
         css: {
           left: e.clientX,
           top: e.clientY,
-          scale: 2,
-          rotation: -90,
-          margin: '-10px 0 0 -10px',
-          opacity: 1
+          scale: 1,
+          boxShadow: '0 0 0 50px rgba(0,0,0, 0.025), 0 0 0 25px rgba(0,0,0, 0.025)',
+          width: '10px',
+          height: '10px',
+          // autoAlpha:1
         }
       });
     }
@@ -104,12 +105,44 @@ body, a, button {
 }
 
 .circle {
+  animation-name: hvr-bob;
+  animation-duration: 10s, 10s;
+  animation-delay: 0s, .5s;
+  animation-timing-function: ease-out, ease-in-out;
+  animation-iteration-count: infinite, infinite;
+  animation-fill-mode: forwards;
+  animation-direction: normal, alternate;
   position: fixed;
   z-index: -1;
-  transform: rotate(0) scale(2);
+  width: 10px;
+  height: 10px;
+  background: currentColor;
+  border-radius: 100%;
+  transform-origin: 50% 50%;
   top: 50%;
   left: 50%;
-  margin: -10px 0 0 -10px;
+  box-shadow: 0 0 0 50px rgba(0,0,0, 0.025), 0 0 0 25px rgba(0,0,0, 0.025);
+  margin: -5px 0 0 -5px;
   backface-visibility: hidden;
+}
+@keyframes hvr-bob {
+  0% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2));
+  }
+  50% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+}
+@keyframes hvr-bob-float {
+  100% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
 }
 </style>

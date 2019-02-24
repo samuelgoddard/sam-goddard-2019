@@ -42,10 +42,11 @@ export default {
         css: {
           left: e.clientX,
           top: e.clientY,
-          scale: 30,
-          rotation: -45,
-          margin: '50px 0 0 50px',
-          opacity: 0.15,
+          scale: 1,
+          boxShadow: '0 0 0 250px rgba(0,0,0, 0.05), 0 0 0 100px rgba(0,0,0, 0.05)',
+          width: '5px',
+          height: '5px',
+          // autoAlpha:0.3
         }
       });
     },
@@ -54,10 +55,11 @@ export default {
         css: {
           left: e.clientX,
           top: e.clientY,
-          scale: 2,
-          rotation: -90,
-          margin: '-10px 0 0 -10px',
-          opacity: 1
+          scale: 1,
+          boxShadow: '0 0 0 50px rgba(0,0,0, 0.025), 0 0 0 25px rgba(0,0,0, 0.025)',
+          width: '10px',
+          height: '10px',
+          // autoAlpha:1
         }
       });
     }
