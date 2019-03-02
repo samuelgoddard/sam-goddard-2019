@@ -15,7 +15,8 @@ module.exports = {
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     link: [
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=IBM+Plex+Serif:300,300i,400,400i,500,500i,700,700i' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=EB+Garamond:400,500,700,800' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Proza+Libre' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },

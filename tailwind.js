@@ -50,11 +50,11 @@ let colors = {
   'transparent-50': 'rgba(0,0,0,0.50)',
   'transparent-75': 'rgba(0,0,0,0.75)',
 
-  'black': '#111',
+  'black': '#000',
   'grey': '#b8c2cc',
-  'white': '#eee',
+  'white': '#FFF',
   'red': '#FF4136',
-  'orange': '#FF851B',
+  'orange': '#FDF1E7',
   'green': '#2ECC40',
   'yellow': '#FFDC00',
   'navy': '#001F3F',
@@ -130,11 +130,12 @@ module.exports = {
 
   fonts: {
     'sans': [
+      'Proza Libre',
       'Helvetica Neue',
       'sans-serif',
     ],
     'serif': [
-      'IBM Plex Serif',
+      'EB Garamond',
       'Georgia',
       'serif',
     ],
@@ -165,15 +166,16 @@ module.exports = {
 
   textSizes: {
     'xs': '.75rem',     // 12px
-    'sm': '.875rem',    // 14px
-    'base': '1rem',     // 16px
-    'lg': '1.125rem',   // 18px
-    'xl': '1.25rem',    // 20px
-    '2xl': '1.5rem',    // 24px
-    '3xl': '1.875rem',  // 30px
-    '4xl': '2.25rem',   // 36px
-    '5xl': '3rem',      // 48px
-    '10xl': '4.5rem',     // 96px
+    'sm': '.9rem',    // 14px
+    'base': '1.25rem',     // 16px
+    'md': '1.444rem',   // 16px
+    'lg': '1.777rem',   // 18px
+    'xl': '2.369rem',   // 20px
+    '2xl': '3.157rem',  // 24px
+    '3xl': '4.209rem',  // 30px
+    '4xl': '5.61em',  // 36px
+    '5xl': '6rem',      // 48px
+    '10xl': '4.5rem',    // 96px
   },
 
 
@@ -837,7 +839,7 @@ module.exports = {
   plugins: [
     require('tailwindcss/plugins/container')({
       center: true,
-      padding: '1.75rem',
+      padding: '2rem',
     }),
     require('tailwindcss-transition')({
       standard: 'all .3s ease',

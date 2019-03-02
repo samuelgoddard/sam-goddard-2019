@@ -14,7 +14,8 @@
     "cross-env": "^5.2.0",
     "gsap": "^2.1.1",
     "nuxt": "^2.4.0",
-    "nuxt-svg-loader": "^1.0.1"
+    "nuxt-svg-loader": "^1.0.1",
+    "vue-pose": "^0.5.0"
   },
   "devDependencies": {
     "autoprefixer": "^8.6.4",

@@ -1,68 +1,30 @@
 <template>
-  <div> 
-    <section class="container flex flex-wrap items-center md:min-h-screen py-8 md:py-12">
-      <div>
-        <h1 class="mb-8 md:mb-12 font-serif font-medium">you can stalk me at <span class="block italic font-bold">these places</span></h1>
+  <section> 
+    <div class="w-4/5 xl:w-3/5 mb-12 md:mb-16">
+      <h1 class="text-xl md:text-2xl xl:text-3xl font-normal leading-none mb-4">You can stalk me online at <strong>the following places</strong></h1>
+    </div>
 
-        <div class="flex flex-wrap -mx-8">
-          <div class="w-full sm:w-1/2 md:w-1/3 mb-12 px-8" v-for="place in connectPlaces" :key="place.id">
-            <h2 class="font-serif font-medium">{{ place.title }}</h2>
-            <!-- <p class="font-serif font-light mb-4">{{ place.excerpt }}</p> -->
+    <div class="flex flex-wrap -mx-8">
+      <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 mb-12 px-8" v-for="place in connectPlaces" :key="place.id">
+        <h2 class="text-base md:text-md xl:text-lg mb-1 block">{{ place.title }}</h2>
+        <!-- <p class="font-serif font-light mb-4">{{ place.excerpt }}</p> -->
 
-            <a class="btn font-light border-b-2 border-dashed no-underline inline-block py-2" rel="noopener" target="_blank" :href="place.linkUrl" @mouseenter="tweenHover" @mouseleave="tweenReset">
-              {{ place.linkText }}
-              <external-icon class="w-5"></external-icon>
-            </a>
-          </div>
-        </div>
+        <a class="text-white font-sans text-sm" rel="noopener" target="_blank" :href="place.linkUrl">
+          {{ place.linkText }}
+          <external-icon class="w-4"></external-icon>
+        </a>
       </div>
-    </section>
-    <transition name="fade">
-      <div @mouseenter="tweenHover" @mouseleave="tweenReset">
-        <nuxt-link to="/" v-on:click.native="tweenReset" class="border-2 border-dashed flex justify-center items-center h-12 w-12 fixed pin-b pin-l m-4 font-mono toggle-dark-mode rounded rounded-full transition">
-          <back-icon class="w-6"/>
-        </nuxt-link>
-      </div>
-    </transition>
-  </div>
+    </div>
+  </section>
 </template>
 
 <script>
-import BackIcon from '@/assets/icons/back.svg';
 import ExternalIcon from '@/assets/icons/external.svg';
 
 export default {
+  transition: 'fade',
   components: {
-    BackIcon,
     ExternalIcon,
-  },
-  methods: {
-    tweenHover(e) {
-      TweenLite.to(document.getElementsByClassName('circle'), 0.2, {
-        css: {
-          left: e.clientX,
-          top: e.clientY,
-          scale: 1,
-          boxShadow: '0 0 0 250px rgba(0,0,0, 0.05), 0 0 0 100px rgba(0,0,0, 0.05)',
-          width: '5px',
-          height: '5px',
-          // autoAlpha:0.3
-        }
-      });
-    },
-    tweenReset(e) {
-      TweenLite.to(document.getElementsByClassName('circle'), 0.2, {
-        css: {
-          left: e.clientX,
-          top: e.clientY,
-          scale: 1,
-          boxShadow: '0 0 0 50px rgba(0,0,0, 0.025), 0 0 0 25px rgba(0,0,0, 0.025)',
-          width: '10px',
-          height: '10px',
-          // autoAlpha:1
-        }
-      });
-    }
   },
   data() {
     return {
