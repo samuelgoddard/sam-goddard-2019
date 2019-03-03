@@ -51,7 +51,7 @@ let colors = {
   'transparent-75': 'rgba(0,0,0,0.75)',
 
   'black': '#000',
-  'grey': '#b8c2cc',
+  'grey': '#535353',
   'white': '#FFF',
   'red': '#FF4136',
   'orange': '#FDF1E7',
@@ -798,7 +798,7 @@ module.exports = {
     minHeight: ['responsive'],
     minWidth: ['responsive'],
     negativeMargin: ['responsive'],
-    opacity: ['responsive'],
+    opacity: ['responsive', 'hover'],
     outline: ['focus'],
     overflow: ['responsive'],
     padding: ['responsive'],
