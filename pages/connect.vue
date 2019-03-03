@@ -4,8 +4,8 @@
       <h1 class="text-xl md:text-2xl xl:text-3xl font-normal leading-tight mb-4">You can stalk me online at <strong>the following places</strong></h1>
     </div>
 
-    <div class="flex flex-wrap -mx-8">
-      <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 mb-12 px-8" v-for="place in connectPlaces" :key="place.id">
+    <div class="flex flex-wrap -mx-2 md:-mx-8">
+      <div class="w-1/2 sm:w-1/2 md:w-1/3 lg:w-1/4 mb-12 px-2 md:px-8" v-for="place in connectPlaces" :key="place.id">
         <h2 class="text-base md:text-md xl:text-lg mb-1 block">{{ place.title }}</h2>
         <!-- <p class="font-serif font-light mb-4">{{ place.excerpt }}</p> -->
 
