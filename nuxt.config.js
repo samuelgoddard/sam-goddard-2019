@@ -46,6 +46,15 @@ module.exports = {
   */
   modules: [
     'nuxt-svg-loader',
+    ['nuxt-social-meta', {
+      url: 'https://samgoddard.co.uk',
+      title: 'Sam Goddard',
+      description: 'Web Developer at Kind, based in Nottingham',
+      img: '~assets/images/twitter-card.png',
+      locale: 'en_GB',
+      twitter: '@samuelgoddard',
+      themeColor: '#000'
+    }]
   ],
 
   /*
