@@ -136,7 +136,7 @@ module.exports = {
       'sans-serif',
     ],
     'serif-bold': [  
-      'Recoleta-Bold',
+      'Recoleta-Semibold',
       'Helvetica Neue',
       'sans-serif',
     ],
