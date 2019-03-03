@@ -9,7 +9,7 @@
           <nuxt-link to="/" class="nav-item">home</nuxt-link>
           <nuxt-link to="/about" class="nav-item">about</nuxt-link>
           <nuxt-link to="/current" class="nav-item">work</nuxt-link>
-          <nuxt-link to="/resume" class="nav-item">resume</nuxt-link>
+          <!-- <nuxt-link to="/resume" class="nav-item">resume</nuxt-link> -->
           <nuxt-link to="/connect" class="nav-item">connect</nuxt-link>
         </nav>
 

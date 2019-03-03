@@ -1,13 +1,10 @@
-@font-face {font-family: 'Recoleta-Black';src:url('/webfonts/38E2A5_0_unhinted_0.woff2') format('woff2'),url('/webfonts/38E2A5_0_unhinted_0.woff') format('woff'),url(/'webfonts/38E2A5_0_unhinted_0.ttf') format('truetype');}
+@font-face {font-family: 'Recoleta-Medium';src: url('/webfonts/38E2AA_0_0.eot');src: url('/webfonts/38E2AA_0_0.eot?#iefix') format('embedded-opentype'),url('/webfonts/38E2AA_0_0.woff2') format('woff2'),url('/webfonts/38E2AA_0_0.woff') format('woff'),url('/webfonts/38E2AA_0_0.ttf') format('truetype');}
  
   
-@font-face {font-family: 'Recoleta-Bold';src:url('/webfonts/38E2A5_1_unhinted_0.woff2') format('woff2'),url('/webfonts/38E2A5_1_unhinted_0.woff') format('woff'),url(/'webfonts/38E2A5_1_unhinted_0.ttf') format('truetype');}
+@font-face {font-family: 'Recoleta-Regular';src: url('/webfonts/38E2AA_1_0.eot');src: url('/webfonts/38E2AA_1_0.eot?#iefix') format('embedded-opentype'),url('/webfonts/38E2AA_1_0.woff2') format('woff2'),url('/webfonts/38E2AA_1_0.woff') format('woff'),url('/webfonts/38E2AA_1_0.ttf') format('truetype');}
  
   
-@font-face {font-family: 'Recoleta-Medium';src:url('/webfonts/38E2A5_2_unhinted_0.woff2') format('woff2'),url('/webfonts/38E2A5_2_unhinted_0.woff') format('woff'),url(/'webfonts/38E2A5_2_unhinted_0.ttf') format('truetype');}
- 
-  
-@font-face {font-family: 'Recoleta-Regular';src:url('/webfonts/38E2A5_3_unhinted_0.woff2') format('woff2'),url('/webfonts/38E2A5_3_unhinted_0.woff') format('woff'),url(/'webfonts/38E2A5_3_unhinted_0.ttf') format('truetype');}
+@font-face {font-family: 'Recoleta-SemiBold';src: url('/webfonts/38E2AA_2_0.eot');src: url('/webfonts/38E2AA_2_0.eot?#iefix') format('embedded-opentype'),url('/webfonts/38E2AA_2_0.woff2') format('woff2'),url('/webfonts/38E2AA_2_0.woff') format('woff'),url('/webfonts/38E2AA_2_0.ttf') format('truetype');}
 
 @tailwind preflight;
 
@@ -15,9 +12,6 @@
 
 @tailwind utilities;
 
-body {
-  font-family: "Recoleta-Medium" !important;
-}
 
 .fade-enter-active {
   animation: fadeIn 350ms forwards;
