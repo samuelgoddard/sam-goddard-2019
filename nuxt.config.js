@@ -1,6 +1,6 @@
 module.exports = {
   head: {
-    title: 'Sam Goddard | Developer based in Nottingham',
+    title: 'Sam Goddard | Web Developer based in Nottingham',
     htmlAttrs: { lang: 'en' },
     meta: [
       { charset: 'utf-8' },
@@ -38,7 +38,7 @@ module.exports = {
     'nuxt-svg-loader',
     ['nuxt-social-meta', {
       url: 'https://samgoddard.netlify.com',
-      title: 'Sam Goddard | Developer based in Nottingham',
+      title: 'Sam Goddard | Web Developer based in Nottingham',
       description: 'I am a web developer from Nottingham with ten plus years of experience in methodical HTML, CSS and JavaScript',
       img: 'https://samgoddard.netlify.com/twitter-card.png',
       locale: 'en_GB',
