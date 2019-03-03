@@ -165,6 +165,7 @@ module.exports = {
   */
 
   textSizes: {
+    '2xs': '.65rem',     // 12px
     'xs': '.75rem',     // 12px
     'sm': '.9rem',    // 14px
     'base': '1.25rem',     // 16px
@@ -198,6 +199,7 @@ module.exports = {
     'normal': 400,
     'medium': 500,
     'bold': 700,
+    'black': 800,
   },
 
 
@@ -215,8 +217,8 @@ module.exports = {
 
   leading: {
     'none': 1,
-    'tight': 1.25,
-    'normal': 1.5,
+    'tight': 1.18,
+    'normal': 1.66,
     'loose': 2,
   },
 

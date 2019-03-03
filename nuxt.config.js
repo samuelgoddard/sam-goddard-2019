@@ -16,7 +16,7 @@ module.exports = {
     ],
     link: [
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=EB+Garamond:400,500,700,800' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Proza+Libre' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Proza+Libre:400,700,800' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },

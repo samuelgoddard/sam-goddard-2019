@@ -1,7 +1,7 @@
 <template>
   <section class="pb-12 sm:pb-24"> 
     <div class="w-4/5 xl:w-3/5 mb-12 md:mb-16">
-      <h1 class="text-xl md:text-2xl xl:text-3xl font-normal leading-none mb-4">I'm curently working on <strong>the following stuff</strong></h1>
+      <h1 class="text-xl md:text-2xl xl:text-3xl font-normal leading-tight mb-4">I'm curently working on <strong>the following stuff</strong></h1>
     </div>
 
     <div class="flex flex-wrap -mx-8">
