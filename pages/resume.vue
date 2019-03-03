@@ -24,6 +24,11 @@ export default {
   components: {
     ExternalIcon,
   },
+  head () {
+    return {
+      title: "Sam Goddard | Resume"
+    }
+  },
   data() {
     return {
     }

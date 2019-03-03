@@ -155,6 +155,11 @@ export default {
   components: {
     ExternalIcon,
   },
+  head () {
+    return {
+      title: "Sam Goddard | About"
+    }
+  },
   data() {
     return {
     }

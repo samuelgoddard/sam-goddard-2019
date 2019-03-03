@@ -26,6 +26,11 @@ export default {
   components: {
     ExternalIcon,
   },
+  head () {
+    return {
+      title: "Sam Goddard | Connect"
+    }
+  },
   data() {
     return {
       connectPlaces: [{
