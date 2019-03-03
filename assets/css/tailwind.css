@@ -1,8 +1,23 @@
+@font-face {font-family: 'Recoleta-Black';src:url('/webfonts/38E2A5_0_unhinted_0.woff2') format('woff2'),url('/webfonts/38E2A5_0_unhinted_0.woff') format('woff'),url(/'webfonts/38E2A5_0_unhinted_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Recoleta-Bold';src:url('/webfonts/38E2A5_1_unhinted_0.woff2') format('woff2'),url('/webfonts/38E2A5_1_unhinted_0.woff') format('woff'),url(/'webfonts/38E2A5_1_unhinted_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Recoleta-Medium';src:url('/webfonts/38E2A5_2_unhinted_0.woff2') format('woff2'),url('/webfonts/38E2A5_2_unhinted_0.woff') format('woff'),url(/'webfonts/38E2A5_2_unhinted_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'Recoleta-Regular';src:url('/webfonts/38E2A5_3_unhinted_0.woff2') format('woff2'),url('/webfonts/38E2A5_3_unhinted_0.woff') format('woff'),url(/'webfonts/38E2A5_3_unhinted_0.ttf') format('truetype');}
+
 @tailwind preflight;
 
 @tailwind components;
 
 @tailwind utilities;
+
+body {
+  font-family: "Recoleta-Medium" !important;
+}
 
 .fade-enter-active {
   animation: fadeIn 350ms forwards;
@@ -32,6 +47,19 @@
   }
 }
 
+.work-list {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+}
+
+@screen lg {
+  .work-list {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+  }
+}
 
 .nav-item {
   @apply no-underline border-b border-black text-white opacity-50 mr-3 font-sans font-normal text-sm transition-darkmode inline-block;

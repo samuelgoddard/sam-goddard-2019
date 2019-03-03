@@ -131,22 +131,22 @@ module.exports = {
 
   fonts: {
     'sans': [
-      'Recoleta Regular',
+      'Recoleta-Regular',
       'Helvetica Neue',
       'sans-serif',
     ],
     'serif-bold': [  
-      'Recoleta Semi Bold',
+      'Recoleta-Bold',
       'Helvetica Neue',
       'sans-serif',
     ],
     'serif-medium': [
-      'Recoleta Medium',
+      'Recoleta-Medium',
       'Helvetica Neue',
       'sans-serif',
     ],
     'serif': [
-      'Recoleta Regular',
+      'Recoleta-Regular',
       'Georgia',
       'serif',
     ],

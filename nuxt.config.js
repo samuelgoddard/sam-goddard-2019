@@ -8,12 +8,9 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'I am a web developer from Nottingham with ten plus years of experience in methodical HTML, CSS and JavaScript' }
     ],
     link: [
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Proza+Libre:400,700,800' },
+      { rel: 'stylesheet', href: '//hello.myfonts.net/count/38e2a5' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
-    script: [
-      { src: 'https://easy.myfonts.net/v2/js?sid=338275(font-family=Recoleta+Medium)&sid=338280(font-family=Recoleta+Light)&sid=338281(font-family=Recoleta+Regular)&sid=338282(font-family=Recoleta+Semi+Bold)&key=9QFyBMxZwB' }
-    ]
   },
 
   /*
