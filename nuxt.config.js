@@ -49,8 +49,8 @@ module.exports = {
     ['nuxt-social-meta', {
       url: 'https://samgoddard.co.uk',
       title: 'Sam Goddard',
-      description: 'Web Developer at Kind, based in Nottingham',
-      img: '~assets/images/twitter-card.png',
+      description: 'I\'m a web developer from nottingham with ten plus years of experience in methodical html, css and javascript',
+      img: 'assets/images/twitter-card.png',
       locale: 'en_GB',
       twitter: '@samuelgoddard',
       themeColor: '#000'
