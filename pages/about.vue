@@ -14,12 +14,12 @@
 
         <div class="flex flex-wrap -mx-3 mb-6 md:mb-12">
         <figure class="mt-2 px-3 w-3/5">
-          <img src="~/assets/images/sam-hol-llama.png" alt="Sam, Hol and Marvin (The Llama)" />
+          <img src="~/assets/images/sam-hol-llama.jpg" alt="Sam, Hol and Marvin (The Llama)" />
           <figcaption class="font-sans text-grey text-xs py-2 leading-normal">Me, Hol, and our alpaca friends</figcaption>
         </figure>
 
         <figure class="mt-2 px-3 w-2/5">
-          <img src="~/assets/images/sam-dog2.png" alt="Sam and Winny" />
+          <img src="~/assets/images/sam-dog2.jpg" alt="Sam and Winny" />
           <figcaption class="font-sans text-grey text-xs py-2 leading-normal">Win helping me squash some bugs</figcaption>
         </figure>
         </div>
@@ -32,12 +32,12 @@
 
         <div class="flex flex-wrap -mx-3 mb-6 md:mb-12">
           <figure class="mt-2 px-3 w-1/2">
-            <img src="~/assets/images/sam-beach.png" alt="Sam beach clean" />
+            <img src="~/assets/images/sam-beach.jpg" alt="Sam beach clean" />
             <figcaption class="font-sans text-grey text-xs py-2 leading-normal">Helping with a beach clean up on Newborough Beach for Surfers Against Sewage</figcaption>
           </figure>
 
           <figure class="mt-2 px-3 w-1/2">
-            <img src="~/assets/images/sam-kind-squad.png" alt="Sam as a parrot" />
+            <img src="~/assets/images/sam-kind-squad.jpg" alt="Sam as a parrot" />
             <figcaption class="font-sans text-grey text-xs py-2 leading-normal">Some of the Kind gang go paddle boarding in Wales</figcaption>
           </figure>
         </div>
@@ -50,17 +50,17 @@
 
         <div class="flex flex-wrap -mx-3">
           <figure class="mt-2 px-3 w-1/3">
-            <img src="~/assets/images/sam.png" alt="Picture of Sam holding a nice pooch" />
+            <img src="~/assets/images/sam.jpg" alt="Picture of Sam holding a nice pooch" />
             <figcaption class="font-sans text-grey text-xs py-2 leading-normal">Me and my new friend Fred</figcaption>
           </figure>
 
           <figure class="mt-2 px-3 w-1/3">
-            <img src="~/assets/images/sam-lovebirds.png" alt="Sam and Love birds" />
+            <img src="~/assets/images/sam-lovebirds.jpg" alt="Sam and Love birds" />
             <figcaption class="font-sans text-grey text-xs py-2 leading-normal">Me with some awesome love birds</figcaption>
           </figure>
 
           <figure class="mt-2 px-3 w-1/3">
-            <img src="~/assets/images/sam-dog1.png" alt="Sam and Winny" />
+            <img src="~/assets/images/sam-dog1.jpg" alt="Sam and Winny" />
             <figcaption class="font-sans text-grey text-xs py-2 leading-normal">Me and my best mate Win</figcaption>
           </figure>
         </div>
