@@ -53,6 +53,7 @@ let colors = {
   'black': '#111',
   'grey': '#535353',
   'white': '#DDD',
+  'offwhite': '#FDF1E7',
   'red': '#FF4136',
   'orange': '#FDF1E7',
   'green': '#2ECC40',
@@ -227,7 +228,7 @@ module.exports = {
 
   leading: {
     'none': 1,
-    'tight': 1.18,
+    'tight': 1.22,
     'normal': 1.66,
     'loose': 2,
   },
@@ -857,7 +858,7 @@ module.exports = {
       standard: 'all 250ms ease',
       transitions: {
         'slow': 'all 500ms ease',
-        'darkmode': 'background-color 500ms ease, color 500ms ease'
+        'darkmode': 'background-color 500ms ease, color 500ms ease, border-color 500ms ease'
       }  
     })
   ],

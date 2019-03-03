@@ -1,5 +1,5 @@
 <template>
-<div class="min-h-screen transition-darkmode" :class="darkModeClass ? 'bg-white' : 'bg-black'">
+<div class="min-h-screen transition-darkmode" :class="darkModeClass ? 'bg-offwhite' : 'bg-black'">
   <div class="font-serif antialiased container transition-darkmode" :class="darkModeClass ? 'text-black' : 'text-white'">
     
     <header class="m-header pt-12 pb-12 sm:pb-24">      
