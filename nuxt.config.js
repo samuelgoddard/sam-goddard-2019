@@ -1,18 +1,11 @@
-const pkg = require('./package')
-
-
 module.exports = {
-  mode: 'universal',
-
-  /*
-  ** Headers of the page
-  */
   head: {
     title: 'Sam Goddard | Developer',
+    htmlAttrs: { lang: 'en' },
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      { name: 'viewport', content: 'width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' },
+      { hid: 'description', name: 'description', content: 'I am a web developer from Nottingham with ten plus years of experience in methodical HTML, CSS and JavaScript' }
     ],
     link: [
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Proza+Libre:400,700,800' },
