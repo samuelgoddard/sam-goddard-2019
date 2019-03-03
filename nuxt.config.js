@@ -50,7 +50,7 @@ module.exports = {
       url: 'https://samgoddard.co.uk',
       title: 'Sam Goddard',
       description: 'I\'m a web developer from nottingham with ten plus years of experience in methodical html, css and javascript',
-      img: 'assets/images/twitter-card.png',
+      img: '/twitter-card.png',
       locale: 'en_GB',
       twitter: '@samuelgoddard',
       themeColor: '#000'
