@@ -43,7 +43,7 @@ module.exports = {
       url: 'https://samgoddard.netlify.com',
       title: 'Sam Goddard',
       description: 'I am a web developer from Nottingham with ten plus years of experience in methodical HTML, CSS and JavaScript',
-      img: '/twitter-card.png',
+      img: 'https://samgoddard.netlify.com/twitter-card.png',
       locale: 'en_GB',
       twitter: '@samuelgoddard'
     }]
