@@ -9,7 +9,7 @@
         <h2 class="text-base md:text-md xl:text-lg mb-3 block">{{ stuff.title }}</h2>
         <p class="font-sans text-sm leading-normal mb-4">{{ stuff.excerpt }}</p>
 
-        <a class="text-white font-sans text-sm" rel="noopener" target="_blank" :href="stuff.linkUrl">
+        <a class="link font-sans text-sm" rel="noopener" target="_blank" :href="stuff.linkUrl">
           {{ stuff.linkText }}
           <external-icon class="w-4"></external-icon>
         </a>

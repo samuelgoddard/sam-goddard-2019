@@ -50,9 +50,9 @@ let colors = {
   'transparent-50': 'rgba(0,0,0,0.50)',
   'transparent-75': 'rgba(0,0,0,0.75)',
 
-  'black': '#000',
+  'black': '#111',
   'grey': '#535353',
-  'white': '#FFF',
+  'white': '#DDD',
   'red': '#FF4136',
   'orange': '#FDF1E7',
   'green': '#2ECC40',
@@ -130,17 +130,27 @@ module.exports = {
 
   fonts: {
     'sans': [
-      'Proza Libre',
+      'Recoleta Regular',
+      'Helvetica Neue',
+      'sans-serif',
+    ],
+    'serif-bold': [  
+      'Recoleta Semi Bold',
+      'Helvetica Neue',
+      'sans-serif',
+    ],
+    'serif-medium': [
+      'Recoleta Medium',
       'Helvetica Neue',
       'sans-serif',
     ],
     'serif': [
-      'EB Garamond',
+      'Recoleta Regular',
       'Georgia',
       'serif',
     ],
     'mono': [
-      'monospace',
+      'Gabriela Stencil Regular',
     ]
   },
 
@@ -167,13 +177,13 @@ module.exports = {
   textSizes: {
     '2xs': '.65rem',     // 12px
     'xs': '.75rem',     // 12px
-    'sm': '.9rem',    // 14px
+    'sm': '1.1rem',    // 14px
     'base': '1.25rem',     // 16px
     'md': '1.444rem',   // 16px
     'lg': '1.777rem',   // 18px
-    'xl': '2.369rem',   // 20px
-    '2xl': '3.157rem',  // 24px
-    '3xl': '4.209rem',  // 30px
+    'xl': '1.969rem',   // 20px
+    '2xl': '2.657rem',  // 24px
+    '3xl': '3.709rem',  // 30px
     '4xl': '5.61em',  // 36px
     '5xl': '6rem',      // 48px
     '10xl': '4.5rem',    // 96px
@@ -844,7 +854,11 @@ module.exports = {
       padding: '2rem',
     }),
     require('tailwindcss-transition')({
-      standard: 'all .3s ease',
+      standard: 'all 250ms ease',
+      transitions: {
+        'slow': 'all 500ms ease',
+        'darkmode': 'background-color 500ms ease, color 500ms ease'
+      }  
     })
   ],
 

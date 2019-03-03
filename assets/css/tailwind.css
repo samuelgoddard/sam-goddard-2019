@@ -34,7 +34,11 @@
 
 
 .nav-item {
-  @apply no-underline border-b border-black text-white opacity-50 mr-4 font-sans font-normal text-sm transition inline-block;
+  @apply no-underline border-b border-black text-white opacity-50 mr-3 font-sans font-normal text-sm transition-darkmode inline-block;
+}
+
+.dark-mode .nav-item {
+  @apply text-black;
 }
 
 .nav-item--social {
@@ -47,4 +51,16 @@
 
 .nav-item.nuxt-link-exact-active {
   @apply text-white border-b border-white opacity-100;
+}
+
+.dark-mode .nav-item.nuxt-link-exact-active {
+  @apply text-black border-black;
+}
+
+.link {
+  @apply text-white transition-darkmode;
+}
+
+.dark-mode .link {
+  @apply text-black;
 }

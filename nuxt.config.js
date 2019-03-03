@@ -15,9 +15,11 @@ module.exports = {
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     link: [
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=EB+Garamond:400,500,700,800' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Proza+Libre:400,700,800' },
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      { src: 'https://easy.myfonts.net/v2/js?sid=338275(font-family=Recoleta+Medium)&sid=338280(font-family=Recoleta+Light)&sid=338281(font-family=Recoleta+Regular)&sid=338282(font-family=Recoleta+Semi+Bold)&key=9QFyBMxZwB' }
     ]
   },
 

@@ -9,7 +9,7 @@
         <h2 class="text-base md:text-md xl:text-lg mb-1 block">{{ place.title }}</h2>
         <!-- <p class="font-serif font-light mb-4">{{ place.excerpt }}</p> -->
 
-        <a class="text-white font-sans text-sm" rel="noopener" target="_blank" :href="place.linkUrl">
+        <a class="link font-sans text-sm" rel="noopener" target="_blank" :href="place.linkUrl">
           {{ place.linkText }}
           <external-icon class="w-4"></external-icon>
         </a>
