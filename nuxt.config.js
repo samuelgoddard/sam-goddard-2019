@@ -40,13 +40,12 @@ module.exports = {
   modules: [
     'nuxt-svg-loader',
     ['nuxt-social-meta', {
-      url: 'https://samgoddard.netlify.com/',
+      url: 'https://samgoddard.netlify.com',
       title: 'Sam Goddard',
-      description: 'I\'m a web developer from nottingham with ten plus years of experience in methodical html, css and javascript',
+      description: 'I am a web developer from Nottingham with ten plus years of experience in methodical HTML, CSS and JavaScript',
       img: '/twitter-card.png',
       locale: 'en_GB',
-      twitter: '@samuelgoddard',
-      themeColor: '#000'
+      twitter: '@samuelgoddard'
     }]
   ],
 
